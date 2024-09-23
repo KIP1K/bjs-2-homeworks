@@ -28,7 +28,6 @@ function calculateTotalMortgage(percent, contribution, amount, countMonths) {
   return {
     principal,
     monthlyPayment: principal * (monthlyRate * (1 + monthlyRate) ** countMonths / ((1 + monthlyRate)**countMonths - 1)),
-
     totalPayment: countMonths * monthlyPayment
   };
 }
