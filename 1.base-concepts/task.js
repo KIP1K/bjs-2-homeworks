@@ -50,3 +50,4 @@ function calculateTotalMortgage(percent, contribution, amount, countMonths) {
 	let result5 = calculateTotalMortgage(8, 0, 550000, 24);
 	let roundedResult5 = roundNumber(result.totalPayment, 2);
 	console.log(roundedResult5);
+}
