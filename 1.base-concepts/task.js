@@ -14,9 +14,9 @@ function solveEquation(a, b, c) {
 		let x2 = (-b - sqrtD) / (2 * a);
 		return [x1, x2];
 	}
-	console.log(solveEquation(1, -7, 12)); // [-3, 4]
-	console.log(solveEquation(1, -3, 2)); // [1]
-	console.log(solveEquation(1, 5, 6)); // []
+	console.log(solveEquation(1, 5, 4));
+	console.log(solveEquation(1, 2, 1));
+	console.log(solveEquation(1, 2, 10));
 }
 
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
@@ -35,19 +35,19 @@ function calculateTotalMortgage(percent, contribution, amount, countMonths) {
 	let roundedResult1 = roundNumber(result.totalPayment, 2);
 	console.log(roundedResult1);
 
-	let result2 = calculateTotalMortgage(11, 0, 60000, 12);
+	let result2 = calculateTotalMortgage(10, 1000, 50000, 12);
 	let roundedResult2 = roundNumber(result.totalPayment, 2);
 	console.log(roundedResult2);
 
-	let result3 = calculateTotalMortgage(16, 0, 40000, 12);
+	let result3 = calculateTotalMortgage(10, 20000, 20000, 48);
 	let roundedResult3 = roundNumber(result.totalPayment, 2);
 	console.log(roundedResult3);
 
-	let result4 = calculateTotalMortgage(10, 0, 90000, 18);
+	let result4 = calculateTotalMortgage(10, 0, 10000, 36);
 	let roundedResult4 = roundNumber(result.totalPayment, 2);
 	console.log(roundedResult4);
 
-	let result5 = calculateTotalMortgage(8, 0, 550000, 24);
+	let result5 = calculateTotalMortgage(15, 0, 10000, 36);
 	let roundedResult5 = roundNumber(result.totalPayment, 2);
 	console.log(roundedResult5);
 }
